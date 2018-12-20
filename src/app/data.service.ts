@@ -9,34 +9,34 @@ export class DataService {
    
    }
    getTask(){
-    return this.http.get('http://localhost:3000/tasks')
+    return this.http.get('/api/tasks')
   }
    getCategories(){
-     return this.http.get('http://localhost:3000/Categories')
+     return this.http.get('/api/Categories')
    }
    deleteThisTask( id: number){
      
-     return this.http.delete('http://localhost:3000/tasks/'+id);
+     return this.http.delete('/api/tasks/'+id);
    }
    deleteGeneralTask(id: number){
 
-    return this.http.delete('http://localhost:3000/tasks/'+id);
+    return this.http.delete('/api/tasks/'+id);
    }
    addTask(input:string){
-    return this.http.post('http://localhost:3000/tasks/',{
+    return this.http.post('/api/tasks/',{
       text: input,
       completed: false
     }).subscribe()
    }
    addCategory(input:string){
-     return this.http.post('http://localhost:3000/Categories/',{
+     return this.http.post('/api/Categories/',{
        name: input,
        tasks: null
      }
     ).subscribe()
    }
    deleteCategory(id:number){
-     return this.http.delete('http://localhost:3000/Categories/'+id);
+     return this.http.delete('/api/Categories/'+id);
 
    }
 }
