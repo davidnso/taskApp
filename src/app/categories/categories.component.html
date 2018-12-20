@@ -1,0 +1,19 @@
+<ul>
+  <li *ngFor = "let category of Categories$">
+    <a routerLink = "/Categories/{{category.id}}">{{category.name}}</a> <a><i id = 'innerDeleteIcon' class = "material-icons">delete</i></a>
+    <ul>
+      {{category.tasks}}  <a routerLink="">
+        <i class = 'material-icons' id = 'innerDeleteIcon' name='innerIcon' (click) ="deleteTask(category.tasks)">delete</i>
+        <i class = 'material-icons' id='innerDeleteIcon' name='innerIcon' (click) = 'openUpdateDialog(category._id)'>edit</i>
+      </a>
+    </ul>
+    <a routerLink = ""> 
+      <i class = "material-icons" (click) = "openDialog(category._id)" >add_circle_icon</i>
+
+      <i class = "material-icons" (click)='deleteThisCategory(category._id)'>delete</i>
+      
+      <i id='updateIcon' class = "material-icons">update</i>
+    </a>
+  </li>
+  
+</ul>

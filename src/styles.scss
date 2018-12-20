@@ -1,0 +1,139 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin:0; 
+    background: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    height:100vh;
+}
+#container{
+    display:grid; 
+    grid-template-columns:70px auto; 
+    height: 100%; 
+    #content {
+        padding: 30px 50px;
+
+        ul {
+            list-style-type: none;
+            margin:0;padding:0;
+        
+            li {
+                background: #fff;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 8px;
+        
+                a {
+                    font-size: 1.5em;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color:#00A8FF;
+                }
+        
+                ul {
+                    margin-top: 20px;
+                    
+                    li {
+                        padding:0;
+        
+                        a {
+                            font-size: 1em;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+            .example-fill-remaining-space {
+                /* This fills the remaining space, by using flexbox. 
+                   Every toolbar row uses a flexbox row layout. */
+                flex: 1 1 auto;
+              }
+        }
+    }
+#updateIcon{
+    margin-left: 5cm;
+}
+
+
+}
+#modalPopUp{
+    background: #00A8FF;
+   
+    
+}
+.ng-modal-overlay {
+    /* A dark translucent div that covers the whole screen */
+    position:absolute;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#000000;
+    opacity: 0.8;
+  }
+  .ng-modal-dialog {
+    /* A centered div above the overlay with a box shadow. */
+    z-index:10000;
+    position: absolute;
+    width: 50%; /* Default */;
+    height: 20%;
+    
+    /* Center the dialog */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  
+    background-color: #fff;
+    box-shadow: 4px 4px 80px #000;
+    border-radius: 5mm;
+  }
+  .ng-modal-dialog-content {
+    padding:10px;
+    text-align: center;
+    color: #00A8FF;
+    margin-left: 35%;
+  }
+  .ng-modal-close {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 120%;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'arial', 'sans-serif';
+  }
+  .ng-modal-input-content{
+    align-content: center;
+    margin-left: 30%;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    border-top:none;
+    border-left: none;
+    border-right:none;
+    border-bottom-color: #00A8FF;
+    width:300px;
+    
+  }
+  .submitButton{
+      border-radius: 5mm;
+      margin-left:39%; 
+      background-color:#00A8FF;
+      color:white;
+      align-content: center;
+        margin-left: 37%;
+    padding-left: 20px;
+    border:none;
+    width:200px;
+    margin-top: 15px;
+
+  }
+  #innerDeleteIcon{
+      color:grey;
+      opacity: 50%;
+      visibility: hidden;
+  }
+  

@@ -1,0 +1,21 @@
+<ul>
+    <li>
+      <a>
+          General Tasks<i class='material-icons'>edit</i>
+      </a>
+        <ul>
+          <li *ngFor="let tasks of Tasks$">
+            <a routerLink = "/Tasks/{{tasks.id}}"></a>
+            - {{tasks.text}}<a routerLink=""><i class = 'material-icons' id = 'innerDeleteIcon' name='innerIcon' (click) ="deleteGenTasks(tasks._id)">delete</i></a>
+            </li>
+        </ul>
+        <a routerLink = ""> 
+            <i class = "material-icons" (click) = "openDialog()">add_circle_icon</i>
+      
+            <i id='updateIcon' class = "material-icons">updata</i>
+            
+            
+          </a>
+    </li>
+  
+  </ul>

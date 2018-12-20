@@ -1,0 +1,22 @@
+
+  <div class='ng-modal'>
+      <div class='ng-modal-overlay'>
+        <div class='ng-modal-dialog'>
+    <h2 mat-dialog-title class = 'ng-modal-dialog-content' >Add Tasks
+    </h2>
+    
+    <input class = 'ng-modal-input-content' type='text' [(ngModel)]="userTask">
+        
+    <br>
+    <button class = 'submitButton' type = 'submit' (click) = sendInput()>Submit</button>
+     
+  </div>
+    <mat-dialog-content class="mat-typography">
+      <h2>Add</h2>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close  class='ng-modal-close'>X</button>
+    </mat-dialog-actions>
+  </div>
+    </div>
+    
